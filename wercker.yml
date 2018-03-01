@@ -1,0 +1,7 @@
+box: rocker/tidyverse
+build:
+  steps:
+    - script:
+      name: Render R markdown
+      code: |
+        Rscript -e "library(rmarkdown);render('lab-07-mlr-course-evals.Rmd')"
